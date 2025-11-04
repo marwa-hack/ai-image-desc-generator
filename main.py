@@ -34,7 +34,7 @@ msg_content = ("You are a POD marketing expert, experienced in social media mark
     "You will help a print on demand shop to analyze the new design and generate exactly one title, "
     "one engaging description and 15 unique comma separated tags of two or more words, "
     "that are to 90 percent specific tags, to have a high customer reach and sells. "
-    "The print on demand shop is,{text} Wrap the output in this format and provide no other text\n{format_instructions}")
+    "This is for {text}. Wrap the output in this format and provide no other text\n{format_instructions}")
 
 prompt = ChatPromptTemplate.from_messages(
     messages = [
@@ -79,7 +79,7 @@ for root, dirs, files in os.walk(directory):
             
             response = chain.invoke(
                 {
-                    "text":"redbubble shop",
+                    "text":"POD shop",
                     "image":base64_image,
                 }
             )
@@ -97,7 +97,7 @@ for root, dirs, files in os.walk(directory):
             
 
 # Write file information to excel
-workbook = xlsxwriter.Workbook('designsPOD.xlsx')
+workbook = xlsxwriter.Workbook('designImages.xlsx')
 worksheet = workbook.add_worksheet()
 
 for row, (path) in enumerate(images_path_list):
@@ -110,3 +110,4 @@ for row, (path) in enumerate(images_path_list):
     # Autofit the worksheet.
     worksheet.autofit()
 workbook.close()
+
