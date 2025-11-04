@@ -1,10 +1,9 @@
 ## Overview
-
-# Here is a sample code for using AI (Ollama) to describe images for further use e.g. selling art platforms.
-# Ollama and the used nodel from Ollama library must be installed in advance.
-# Images used in this sample code are all AI generated for simulation purposes.
-# SEO enorm title, description and tags for each image are generated.
-# All information about the images is saved in an Excel file.
+Here is a sample code for using AI (Ollama) to describe images for further use e.g. selling art platforms.
+Ollama and the used nodel from Ollama library must be installed in advance.
+Images used in this sample code are all AI generated for simulation purposes.
+SEO enorm title, description and tags for each image are generated.
+All information about the images is saved in an Excel file.
 
 ## Required libraries - requirements.txt
 -> LangChain: 
@@ -41,5 +40,3 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 ```
 pip install -r .\requirements.txt
 ```
-
-## Get more advanced Infos on my Channel [@marwahack](https://www.youtube.com/@marwahack)
