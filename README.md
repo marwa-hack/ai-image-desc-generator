@@ -25,7 +25,9 @@ xlsxwriter
 
 ## Virtual environment setup
 -> Create folder for venv virtual environment 
+```
 python -m venv venv
+```
 -> Activate venv 
 Windows:
 ```
@@ -35,4 +37,5 @@ Windows:
 ```
 pip install -r .\requirements.txt
 ```
+
 
